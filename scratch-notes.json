@@ -1,0 +1,75 @@
+[
+  {
+    "everyone-else": {
+      "id": "everyone-else",
+      "type": "persona",
+      "title": "Looking to help",
+      "description": "Information and ways to get involved for supporters, donors and the general public.",
+      "children": ["contact-us", "get-involved"]
+    },
+    "contact-us": {
+      "id": "contact-us",
+      "type": "persona",
+      "title": "Contact Us",
+      "description": "Get in touch, check facts or read our policy information.",
+      "children": ["fact-checking", "policy-information"]
+    },
+    "fact-checking": {
+      "id": "fact-checking",
+      "type": "article",
+      "title": "Fact Checking",
+      "description": "Verify claims and information about refugees and asylum seekers."
+    },
+    "policy-information": {
+      "id": "policy-information",
+      "type": "article",
+      "title": "Policy Information",
+      "description": "Read about our policy positions and campaigns."
+    },
+    "be-informed": {
+      "id": "be-informed",
+      "type": "persona",
+      "title": "Be Informed",
+      "description": "News, stories and background information about our work.",
+      "children": [
+        "src-newsletter",
+        "social-media",
+        "case-studies",
+        "difference-your-support-makes",
+        "news-stories",
+        "faqs",
+        "about-us",
+        "job-vacancies",
+        "volunteering-opportunities"
+      ]
+    },
+    "job-vacancies": {
+      "id": "job-vacancies",
+      "type": "article",
+      "title": "Job Vacancies",
+      "description": "View current job vacancies with our organisation.",
+      "children": ["apply-for-job"]
+    },
+    "volunteering-opportunities": {
+      "id": "volunteering-opportunities",
+      "type": "article",
+      "title": "Volunteering Opportunities",
+      "description": "Find out how you can volunteer with us.",
+      "children": ["apply-for-volunteer-role"]
+    },
+    "take-action": {
+      "id": "take-action",
+      "type": "persona",
+      "title": "Take Action",
+      "description": "Ways you can actively support our work.",
+      "children": [
+        "donate",
+        "join-as-member",
+        "buy-merch",
+        "join-challenge-event",
+        "join-fundraising-event",
+        "support-refugee-festival"
+      ]
+    }
+  }
+]

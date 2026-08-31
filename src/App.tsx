@@ -9,17 +9,25 @@ import { PageRenderer } from "./components/PageRenderer";
 const typedSitemap = sitemap as Sitemap;
 
 function App() {
-  const [currentPageId, setCurrentPageId] = useState(typedSitemap.site.home);
+  // Trail of visited page ids from home to the current page, used for breadcrumbs.
+  const [trail, setTrail] = useState<string[]>([typedSitemap.site.home]);
 
+  const currentPageId = trail[trail.length - 1];
   const page = typedSitemap.pages[currentPageId];
 
   const handleNavigate = (pageId: string) => {
-    setCurrentPageId(pageId);
+    setTrail((prev) => {
+      const existingIndex = prev.indexOf(pageId);
+      // Re-navigating to a page already in the trail (e.g. via a breadcrumb) truncates it, rather than appending a duplicate.
+      return existingIndex !== -1
+        ? prev.slice(0, existingIndex + 1)
+        : [...prev, pageId];
+    });
     window.scrollTo(0, 0);
   };
 
   const handleHome = () => {
-    setCurrentPageId(typedSitemap.site.home);
+    setTrail([typedSitemap.site.home]);
     window.scrollTo(0, 0);
   };
 
@@ -30,7 +38,7 @@ function App() {
       <main className="flex-grow-1">
         <div className="container py-3">
           <Breadcrumbs
-            currentPageId={currentPageId}
+            trail={trail}
             sitemap={typedSitemap}
             onNavigate={handleNavigate}
           />

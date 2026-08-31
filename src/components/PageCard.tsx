@@ -2,11 +2,17 @@ type PageCardProps = {
   title: string;
   description?: string;
   onClick: () => void;
+  colClassName?: string;
 };
 
-export const PageCard = ({ title, description, onClick }: PageCardProps) => {
+export const PageCard = ({
+  title,
+  description,
+  onClick,
+  colClassName = "col-md-6 col-lg-3 mb-3",
+}: PageCardProps) => {
   return (
-    <div className="col-md-6 col-lg-4 mb-4">
+    <div className={colClassName}>
       <div className="card h-100 shadow-sm">
         <div className="card-body d-flex flex-column">
           <h3 className="card-title h5">{title}</h3>

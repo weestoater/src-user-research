@@ -1,48 +1,26 @@
 import type { Sitemap } from "../types/sitemap";
 
 type BreadcrumbsProps = {
-  currentPageId: string;
+  trail: string[];
   sitemap: Sitemap;
   onNavigate: (pageId: string) => void;
 };
 
 export const Breadcrumbs = ({
-  currentPageId,
+  trail,
   sitemap,
   onNavigate,
 }: BreadcrumbsProps) => {
-  const buildBreadcrumbs = (pageId: string): string[] => {
-    const breadcrumbs: string[] = [];
-    let current = pageId;
-
-    // Build breadcrumb trail by finding parents
-    while (current) {
-      breadcrumbs.unshift(current);
-      const parent = Object.values(sitemap.pages).find((page) =>
-        page.children?.includes(current),
-      );
-      if (parent) {
-        current = parent.id;
-      } else {
-        break;
-      }
-    }
-
-    return breadcrumbs;
-  };
-
-  const breadcrumbs = buildBreadcrumbs(currentPageId);
-
-  if (breadcrumbs.length <= 1) {
+  if (trail.length <= 1) {
     return null;
   }
 
   return (
     <nav aria-label="breadcrumb">
       <ol className="breadcrumb">
-        {breadcrumbs.map((pageId, index) => {
+        {trail.map((pageId, index) => {
           const page = sitemap.pages[pageId];
-          const isLast = index === breadcrumbs.length - 1;
+          const isLast = index === trail.length - 1;
 
           return (
             <li
