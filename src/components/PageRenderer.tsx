@@ -11,16 +11,25 @@ type PageRendererProps = {
   page: Page;
   sitemap: Sitemap;
   onNavigate: (pageId: string) => void;
+  randomizeHomeOrder: boolean;
 };
 
 export const PageRenderer = ({
   page,
   sitemap,
   onNavigate,
+  randomizeHomeOrder,
 }: PageRendererProps) => {
   switch (page.type) {
     case "home":
-      return <HomePage page={page} sitemap={sitemap} onNavigate={onNavigate} />;
+      return (
+        <HomePage
+          page={page}
+          sitemap={sitemap}
+          onNavigate={onNavigate}
+          randomizeOrder={randomizeHomeOrder}
+        />
+      );
 
     case "persona":
       return (

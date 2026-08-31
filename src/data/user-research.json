@@ -10,7 +10,7 @@
       "title": "How can we help?",
       "description": "Choose the option that best describes your situation.",
       "children": [
-        "country",
+        "country-resources",
         "refugee-transition",
         "unaccompanied-minors",
         "asylum-preclaim",
@@ -276,18 +276,11 @@
         "access-resources"
       ]
     },
-    "country": {
-      "id": "country",
-      "type": "persona",
-      "title": "Are you from one of these countries?",
-      "description": "Find country-specific information and resources.",
-      "children": ["country-resources"]
-    },
     "country-resources": {
       "id": "country-resources",
       "type": "resource-list",
       "title": "Country specific resources",
-      "description": "Information and resources specific to your country of origin.",
+      "description": "Information and resources specific to Ukraine, Syria and Afghanistan.",
       "resources": [
         {
           "id": "country-resource-ukraine",

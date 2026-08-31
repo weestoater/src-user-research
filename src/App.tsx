@@ -8,9 +8,16 @@ import { PageRenderer } from "./components/PageRenderer";
 
 const typedSitemap = sitemap as Sitemap;
 
+const RANDOMIZE_HOME_ORDER_STORAGE_KEY = "randomizeHomeOrder";
+
 function App() {
   // Trail of visited page ids from home to the current page, used for breadcrumbs.
   const [trail, setTrail] = useState<string[]>([typedSitemap.site.home]);
+
+  // Defaults to on; persisted so a researcher's preference survives a reload.
+  const [randomizeHomeOrder, setRandomizeHomeOrder] = useState<boolean>(
+    () => localStorage.getItem(RANDOMIZE_HOME_ORDER_STORAGE_KEY) !== "false",
+  );
 
   const currentPageId = trail[trail.length - 1];
   const page = typedSitemap.pages[currentPageId];
@@ -31,6 +38,11 @@ function App() {
     window.scrollTo(0, 0);
   };
 
+  const handleToggleRandomizeHomeOrder = (enabled: boolean) => {
+    setRandomizeHomeOrder(enabled);
+    localStorage.setItem(RANDOMIZE_HOME_ORDER_STORAGE_KEY, String(enabled));
+  };
+
   return (
     <div className="d-flex flex-column min-vh-100">
       <Header onHomeClick={handleHome} />
@@ -48,10 +60,14 @@ function App() {
           page={page}
           sitemap={typedSitemap}
           onNavigate={handleNavigate}
+          randomizeHomeOrder={randomizeHomeOrder}
         />
       </main>
 
-      <Footer />
+      <Footer
+        randomizeHomeOrder={randomizeHomeOrder}
+        onToggleRandomizeHomeOrder={handleToggleRandomizeHomeOrder}
+      />
     </div>
   );
 }

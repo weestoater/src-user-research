@@ -88,3 +88,13 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Ensure card text wraps fully without truncation */
+.card-text {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+}
