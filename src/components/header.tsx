@@ -13,7 +13,7 @@ export const Header = ({ onHomeClick }: HeaderProps) => {
           >
             <h1 className="h4 mb-0">
               <i className="bi bi-house-door me-2"></i>
-              SRC: User Research
+              User Research
             </h1>
           </button>
         </div>

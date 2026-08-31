@@ -1,0 +1,663 @@
+{
+  "site": {
+    "title": "Welcome",
+    "home": "home"
+  },
+  "pages": {
+    "home": {
+      "id": "home",
+      "type": "home",
+      "title": "How can we help?",
+      "description": "Choose the option that best describes your situation.",
+      "children": [
+        "country",
+        "refugee-transition",
+        "unaccompanied-minors",
+        "asylum-preclaim",
+        "asylum-current-claim",
+        "claim-failed",
+        "claim-appeal",
+        "claim-succeeded",
+        "getting-help",
+        "get-informed",
+        "get-involved"
+      ]
+    },
+    "getting-help": {
+      "id": "getting-help",
+      "type": "persona",
+      "title": "Getting Help",
+      "description": "Information and resources for refugees and asylum seekers seeking assistance.",
+      "children": ["the-asylum-process", "life-in-scotland"]
+    },
+    "get-informed": {
+      "id": "get-informed",
+      "type": "persona",
+      "title": "Get Informed",
+      "description": "Information and ways to get involved for supporters, donors and the general public.",
+      "children": [
+        "src-newsletter",
+        "social-media",
+        "case-studies",
+        "difference-your-support-makes",
+        "news-stories",
+        "faqs",
+        "about-us"
+      ]
+    },
+    "get-involved": {
+      "id": "get-involved",
+      "type": "persona",
+      "title": "Get Involved",
+      "description": "Ways to stay informed or take action in support of refugees and asylum seekers.",
+      "children": [
+        "donate",
+        "join-as-member",
+        "buy-merch",
+        "join-challenge-event",
+        "join-fundraising-event",
+        "support-refugee-festival",
+        "apply-for-job",
+        "apply-for-volunteer-role"
+      ]
+    },
+    "src-newsletter": {
+      "id": "src-newsletter",
+      "type": "article",
+      "title": "SRC Newsletter",
+      "description": "Sign up to receive our regular newsletter."
+    },
+    "social-media": {
+      "id": "social-media",
+      "type": "article",
+      "title": "Social Media",
+      "description": "Follow us for the latest news and updates."
+    },
+    "case-studies": {
+      "id": "case-studies",
+      "type": "article",
+      "title": "Case Studies",
+      "description": "Real stories from the people we support."
+    },
+    "difference-your-support-makes": {
+      "id": "difference-your-support-makes",
+      "type": "article",
+      "title": "The difference your support makes",
+      "description": "See the impact your support has on refugees and asylum seekers."
+    },
+    "news-stories": {
+      "id": "news-stories",
+      "type": "article",
+      "title": "News Stories",
+      "description": "Read the latest news from our organisation."
+    },
+    "faqs": {
+      "id": "faqs",
+      "type": "article",
+      "title": "FAQ's",
+      "description": "Answers to commonly asked questions."
+    },
+    "about-us": {
+      "id": "about-us",
+      "type": "article",
+      "title": "About Us - Governance, Annual Accounts etc.",
+      "description": "Learn about our governance, annual accounts and how we operate.",
+      "children": ["new-scots-website"]
+    },
+    "new-scots-website": {
+      "id": "new-scots-website",
+      "type": "article",
+      "title": "New Scots Website (showcasing integration)",
+      "description": "Visit the New Scots website showcasing integration work in Scotland."
+    },
+    "donate": {
+      "id": "donate",
+      "type": "article",
+      "title": "Donate",
+      "description": "Make a donation to support our work."
+    },
+    "join-as-member": {
+      "id": "join-as-member",
+      "type": "article",
+      "title": "Join as a member",
+      "description": "Become a member of our organisation."
+    },
+    "buy-merch": {
+      "id": "buy-merch",
+      "type": "article",
+      "title": "Buy Merch",
+      "description": "Shop our merchandise to support our work."
+    },
+    "join-challenge-event": {
+      "id": "join-challenge-event",
+      "type": "article",
+      "title": "Join a challenge event",
+      "description": "Take part in a sponsored challenge event."
+    },
+    "join-fundraising-event": {
+      "id": "join-fundraising-event",
+      "type": "article",
+      "title": "Join a fundraising event",
+      "description": "Take part in one of our fundraising events."
+    },
+    "support-refugee-festival": {
+      "id": "support-refugee-festival",
+      "type": "article",
+      "title": "Support the refugee festival Scotland",
+      "description": "Get involved with the refugee festival Scotland.",
+      "children": ["festival-microsite"]
+    },
+    "festival-microsite": {
+      "id": "festival-microsite",
+      "type": "article",
+      "title": "Festival MicroSite",
+      "description": "Visit the refugee festival Scotland microsite."
+    },
+    "apply-for-job": {
+      "id": "apply-for-job",
+      "type": "article",
+      "title": "Apply for a job",
+      "description": "Submit an application for an open role."
+    },
+    "apply-for-volunteer-role": {
+      "id": "apply-for-volunteer-role",
+      "type": "article",
+      "title": "Apply for a volunteer role",
+      "description": "Submit an application for a volunteering role."
+    },
+    "the-asylum-process": {
+      "id": "the-asylum-process",
+      "type": "persona",
+      "title": "The Asylum Process",
+      "description": "General information about the asylum process in the UK.",
+      "children": [
+        "help-preclaim",
+        "help-current-claim",
+        "help-appeal-failed-claim",
+        "help-current-appeal",
+        "help-with-transition"
+      ]
+    },
+    "life-in-scotland": {
+      "id": "life-in-scotland",
+      "type": "persona",
+      "title": "Life in Scotland",
+      "description": "Practical information about settling into life in Scotland.",
+      "children": [
+        "register-children-school",
+        "apply-english-classes",
+        "look-for-job",
+        "register-with-gp",
+        "find-accommodation",
+        "setup-bank-account",
+        "apply-ilr",
+        "info-on-documents",
+        "destitution-information",
+        "arts-and-culture"
+      ]
+    },
+    "register-children-school": {
+      "id": "register-children-school",
+      "type": "article",
+      "title": "How to register children at school",
+      "description": "Guidance on registering your children at a local school."
+    },
+    "apply-english-classes": {
+      "id": "apply-english-classes",
+      "type": "article",
+      "title": "How to apply for English classes",
+      "description": "Find and apply for English language classes."
+    },
+    "look-for-job": {
+      "id": "look-for-job",
+      "type": "article",
+      "title": "How to look for a job",
+      "description": "Guidance on looking for employment in Scotland."
+    },
+    "register-with-gp": {
+      "id": "register-with-gp",
+      "type": "article",
+      "title": "How to register with the GP",
+      "description": "Guidance on registering with a local GP."
+    },
+    "find-accommodation": {
+      "id": "find-accommodation",
+      "type": "article",
+      "title": "How to find accommodation",
+      "description": "Guidance on finding somewhere to live."
+    },
+    "setup-bank-account": {
+      "id": "setup-bank-account",
+      "type": "article",
+      "title": "How to set up a bank account",
+      "description": "Guidance on setting up a bank account."
+    },
+    "apply-ilr": {
+      "id": "apply-ilr",
+      "type": "article",
+      "title": "How to apply for indefinite leave to remain",
+      "description": "Guidance on applying for indefinite leave to remain."
+    },
+    "info-on-documents": {
+      "id": "info-on-documents",
+      "type": "article",
+      "title": "Information on documents such as travel documents",
+      "description": "Guidance on the documents you may need, including travel documents."
+    },
+    "destitution-information": {
+      "id": "destitution-information",
+      "type": "resource-list",
+      "title": "Destitution Information",
+      "description": "Support available if you are experiencing destitution.",
+      "resources": [
+        {
+          "id": "food-banks-1",
+          "title": "Food Banks",
+          "description": "Find local food banks for emergency food support.",
+          "url": "https://example.org/food-banks"
+        }
+      ]
+    },
+    "arts-and-culture": {
+      "id": "arts-and-culture",
+      "type": "article",
+      "title": "Arts and Culture (Cross Borders)",
+      "description": "Arts and culture opportunities through the Cross Borders programme.",
+      "children": ["cross-borders-microsite"]
+    },
+    "refugees-asylum-seekers": {
+      "id": "refugees-asylum-seekers",
+      "type": "persona",
+      "title": "Refugees / Asylum Seekers and those supporting them",
+      "description": "Find information and support, or access resources tailored to your situation.",
+      "children": [
+        "country-resources",
+        "status-check-intro",
+        "access-resources"
+      ]
+    },
+    "country": {
+      "id": "country",
+      "type": "persona",
+      "title": "Are you from one of these countries?",
+      "description": "Find country-specific information and resources.",
+      "children": ["country-resources"]
+    },
+    "country-resources": {
+      "id": "country-resources",
+      "type": "resource-list",
+      "title": "Country specific resources",
+      "description": "Information and resources specific to your country of origin.",
+      "resources": [
+        {
+          "id": "country-resource-ukraine",
+          "title": "Ukraine",
+          "description": "Specific information for people from Ukraine.",
+          "url": "https://example.org/ukraine"
+        },
+        {
+          "id": "country-resource-syria",
+          "title": "Syria",
+          "description": "Specific information for people from Syria.",
+          "url": "https://example.org/syria"
+        },
+        {
+          "id": "country-resource-afghanistan",
+          "title": "Afghanistan",
+          "description": "Specific information for people from Afghanistan.",
+          "url": "https://example.org/afghanistan"
+        }
+      ]
+    },
+    "status-check-intro": {
+      "id": "status-check-intro",
+      "type": "journey",
+      "title": "I need to know...",
+      "description": "Find out what information is relevant to your immigration status.",
+      "children": ["status-question"]
+    },
+    "status-question": {
+      "id": "status-question",
+      "type": "journey",
+      "title": "This depends on your status. Do you know your status?",
+      "description": "Let us know if you know your current immigration status.",
+      "children": ["select-stage-status", "status-checker"]
+    },
+    "select-stage-status": {
+      "id": "select-stage-status",
+      "type": "task",
+      "title": "Select Stage/Status",
+      "description": "Select your current stage or status to see relevant information.",
+      "children": ["see-relevant-page"]
+    },
+    "status-checker": {
+      "id": "status-checker",
+      "type": "task",
+      "title": "Status Checker",
+      "description": "Answer a few questions to help work out your immigration status.",
+      "children": ["see-relevant-page"]
+    },
+    "see-relevant-page": {
+      "id": "see-relevant-page",
+      "type": "article",
+      "title": "See relevant page",
+      "description": "View the information relevant to your status."
+    },
+    "access-resources": {
+      "id": "access-resources",
+      "type": "persona",
+      "title": "Access Resources",
+      "description": "Find information by persona or by the task you need help with.",
+      "children": ["by-persona", "by-task"]
+    },
+    "by-persona": {
+      "id": "by-persona",
+      "type": "persona",
+      "title": "My status is",
+      "description": "Find information based on your current situation.",
+      "children": [
+        "refugee-transition",
+        "unaccompanied-minors",
+        "asylum-preclaim",
+        "asylum-current-claim",
+        "claim-failed",
+        "claim-appeal",
+        "claim-succeeded"
+      ]
+    },
+    "refugee-transition": {
+      "id": "refugee-transition",
+      "type": "journey",
+      "title": "Have you completed the Refugee transition process? (Resettlement)",
+      "description": "Support for those completing the refugee transition and resettlement process.",
+      "children": ["access-case-worker-support"]
+    },
+    "access-case-worker-support": {
+      "id": "access-case-worker-support",
+      "type": "task",
+      "title": "Access case worker support",
+      "description": "Get support from a case worker during your transition."
+    },
+    "unaccompanied-minors": {
+      "id": "unaccompanied-minors",
+      "type": "task",
+      "title": "Are you an unaccompanied minor?",
+      "description": "Resources for unaccompanied minors, including age dispute support.",
+      "children": ["age-dispute-unaccompanied-minor", "help-preclaim"]
+    },
+    "age-dispute-unaccompanied-minor": {
+      "id": "age-dispute-unaccompanied-minor",
+      "type": "task",
+      "title": "Unaccompanied Minors Resources",
+      "description": "Resources for unaccompanied minors, including age dispute support.",
+      "children": ["help-preclaim"]
+    },
+    "asylum-preclaim": {
+      "id": "asylum-preclaim",
+      "type": "journey",
+      "title": "Do you need to start an asylum claim (pre-claim)",
+      "description": "Guidance for people who need to start an asylum claim.",
+      "children": ["help-preclaim"]
+    },
+    "help-preclaim": {
+      "id": "help-preclaim",
+      "type": "task",
+      "title": "Help with pre-claim",
+      "description": "Information and support before you start your asylum claim.",
+      "children": [
+        "preclaim-entitled",
+        "how-to-claim-asylum",
+        "what-happens-if-claim-asylum",
+        "who-can-advise-me",
+        "prepare-for-ho-interview"
+      ]
+    },
+    "preclaim-entitled": {
+      "id": "preclaim-entitled",
+      "type": "task",
+      "title": "What am I entitled to?",
+      "description": "Find out what support you are entitled to before making a claim."
+    },
+    "how-to-claim-asylum": {
+      "id": "how-to-claim-asylum",
+      "type": "article",
+      "title": "How to claim asylum",
+      "description": "Step-by-step guidance on how to claim asylum."
+    },
+    "what-happens-if-claim-asylum": {
+      "id": "what-happens-if-claim-asylum",
+      "type": "article",
+      "title": "What happens if I claim asylum?",
+      "description": "Understand what happens after you claim asylum.",
+      "children": ["life-in-scotland"]
+    },
+    "who-can-advise-me": {
+      "id": "who-can-advise-me",
+      "type": "article",
+      "title": "Who can advise me?",
+      "description": "Find out who can give you advice about your claim."
+    },
+    "prepare-for-ho-interview": {
+      "id": "prepare-for-ho-interview",
+      "type": "article",
+      "title": "How can I prepare for interviews with HO?",
+      "description": "Guidance on preparing for interviews with the Home Office."
+    },
+
+    "asylum-current-claim": {
+      "id": "asylum-current-claim",
+      "type": "journey",
+      "title": "Do you have a current asylum claim in progress (decision pending)",
+      "description": "Support for people with a current asylum claim awaiting a decision.",
+      "children": ["help-current-claim", "trafficking-claim"]
+    },
+    "help-current-claim": {
+      "id": "help-current-claim",
+      "type": "task",
+      "title": "Help with current claim",
+      "description": "Information and support while your asylum claim is in progress.",
+      "children": [
+        "current-claim-entitled",
+        "claim-successful",
+        "claim-unsuccessful"
+      ]
+    },
+    "current-claim-entitled": {
+      "id": "current-claim-entitled",
+      "type": "task",
+      "title": "What am I entitled to?",
+      "description": "Find out what support you are entitled to during your claim."
+    },
+    "claim-successful": {
+      "id": "claim-successful",
+      "type": "article",
+      "title": "What happens if my claim is successful?",
+      "description": "Understand what happens if your asylum claim is successful.",
+      "children": ["life-in-scotland"]
+    },
+    "claim-unsuccessful": {
+      "id": "claim-unsuccessful",
+      "type": "article",
+      "title": "What happens if my claim is unsuccessful?",
+      "description": "Understand what happens if your asylum claim is unsuccessful.",
+      "children": ["claim-failed"]
+    },
+    "trafficking-claim": {
+      "id": "trafficking-claim",
+      "type": "journey",
+      "title": "Do you have a Trafficking Claim?",
+      "description": "Support for people who have a trafficking claim.",
+      "children": ["signpost-specific-resources"]
+    },
+    "signpost-specific-resources": {
+      "id": "signpost-specific-resources",
+      "type": "resource-list",
+      "title": "Signpost to specific resources",
+      "description": "Specialist resources for people with a trafficking claim.",
+      "resources": [
+        {
+          "id": "trafficking-resource-1",
+          "title": "Support for survivors of trafficking",
+          "description": "Specialist support services for survivors of trafficking.",
+          "url": "https://example.org/trafficking-support"
+        }
+      ]
+    },
+
+    "claim-failed": {
+      "id": "claim-failed",
+      "type": "journey",
+      "title": "Did your claim fail? (NRPF)",
+      "description": "Support for people whose asylum claim has failed and have no recourse to public funds.",
+      "children": [
+        "appeal-entitled",
+        "appeal-options-rejected",
+        "where-can-i-go-for-help",
+        "home-office-information"
+      ]
+    },
+    "help-appeal-failed-claim": {
+      "id": "help-appeal-failed-claim",
+      "type": "task",
+      "title": "Help appealing failed claim",
+      "description": "Information and support to help you appeal a failed claim.",
+      "children": [
+        "appeal-entitled",
+        "appeal-options-rejected",
+        "where-can-i-go-for-help",
+        "home-office-information"
+      ]
+    },
+    "home-office-information": {
+      "id": "home-office-information",
+      "type": "article",
+      "title": "Home Office Information",
+      "description": "Information from the Home Office about your case."
+    },
+    "appeal-entitled": {
+      "id": "appeal-entitled",
+      "type": "task",
+      "title": "What am I entitled to?",
+      "description": "Find out what support you are entitled to while appealing."
+    },
+    "appeal-options-rejected": {
+      "id": "appeal-options-rejected",
+      "type": "article",
+      "title": "What are my options if my claim is rejected?",
+      "description": "Understand your options if your claim has been rejected.",
+      "children": ["destitution-information"]
+    },
+    "where-can-i-go-for-help": {
+      "id": "where-can-i-go-for-help",
+      "type": "article",
+      "title": "Where can I go for help?",
+      "description": "Find organisations and services that can help you.",
+      "children": ["destitution-information"]
+    },
+
+    "claim-appeal": {
+      "id": "claim-appeal",
+      "type": "journey",
+      "title": "Is your claim under appeal?",
+      "description": "Support for people whose asylum claim is currently under appeal.",
+      "children": ["help-current-appeal"]
+    },
+    "help-current-appeal": {
+      "id": "help-current-appeal",
+      "type": "task",
+      "title": "Help with current appeal",
+      "description": "Information and support while your appeal is in progress.",
+      "children": ["appeal-process", "appeal-help-during-process"]
+    },
+    "current-appeal-entitled": {
+      "id": "current-appeal-entitled",
+      "type": "task",
+      "title": "What am I entitled to?",
+      "description": "Find out what support you are entitled to during your appeal."
+    },
+    "appeal-process": {
+      "id": "appeal-process",
+      "type": "article",
+      "title": "What is the appeal process?",
+      "description": "Understand the steps involved in the appeal process."
+    },
+    "appeal-help-during-process": {
+      "id": "appeal-help-during-process",
+      "type": "article",
+      "title": "What help can I get during this process?",
+      "description": "Find out what help is available while your appeal is ongoing."
+    },
+
+    "claim-succeeded": {
+      "id": "claim-succeeded",
+      "type": "journey",
+      "title": "Has your claim succeeded? (Transition)",
+      "description": "Support for people transitioning after a successful asylum claim.",
+      "children": ["help-with-transition", "received-leave-no-funds"]
+    },
+    "help-with-transition": {
+      "id": "help-with-transition",
+      "type": "task",
+      "title": "Help with transition",
+      "description": "Information and support to help you transition after your claim succeeds.",
+      "children": [
+        "transition-entitled",
+        "transition-help-during-process",
+        "explanation-of-documents",
+        "what-do-i-do-next"
+      ]
+    },
+    "transition-entitled": {
+      "id": "transition-entitled",
+      "type": "task",
+      "title": "What am I entitled to?",
+      "description": "Find out what support you are entitled to during your transition."
+    },
+    "transition-help-during-process": {
+      "id": "transition-help-during-process",
+      "type": "article",
+      "title": "What help can I get during this process?",
+      "description": "Find out what help is available during your transition."
+    },
+    "explanation-of-documents": {
+      "id": "explanation-of-documents",
+      "type": "article",
+      "title": "Explanation of documents",
+      "description": "Understand the documents you receive after your claim succeeds."
+    },
+    "what-do-i-do-next": {
+      "id": "what-do-i-do-next",
+      "type": "article",
+      "title": "What do I do next?",
+      "description": "Guidance on next steps after your claim succeeds."
+    },
+    "received-leave-no-funds": {
+      "id": "received-leave-no-funds",
+      "type": "journey",
+      "title": "Received leave to remain but no access to public funds",
+      "description": "Support for people who have leave to remain but no access to public funds.",
+      "children": ["get-legal-help"]
+    },
+    "get-legal-help": {
+      "id": "get-legal-help",
+      "type": "task",
+      "title": "Get Legal Help",
+      "description": "Find legal support and advice for your situation."
+    },
+
+    "by-task": {
+      "id": "by-task",
+      "type": "persona",
+      "title": "By Task",
+      "description": "Find information about the asylum process or life in Scotland.",
+      "children": ["the-asylum-process", "life-in-scotland"]
+    },
+
+    "cross-borders-microsite": {
+      "id": "cross-borders-microsite",
+      "type": "article",
+      "title": "Cross Borders Microsite",
+      "description": "Visit the Cross Borders microsite."
+    }
+  }
+}

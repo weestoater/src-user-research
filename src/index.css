@@ -8,6 +8,34 @@
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Bootstrap's compiled CSS bakes primary color hex values per-component, so --bs-primary alone only affects rules like .bg-primary that reference it directly. */
+  --bs-primary: #3d8edd;
+  --bs-primary-rgb: 61, 142, 221;
+}
+
+.btn-primary {
+  --bs-btn-bg: #3d8edd;
+  --bs-btn-border-color: #3d8edd;
+  --bs-btn-hover-bg: #3479bc;
+  --bs-btn-hover-border-color: #3172b1;
+  --bs-btn-focus-shadow-rgb: 90, 159, 226;
+  --bs-btn-active-bg: #3172b1;
+  --bs-btn-active-border-color: #2e6ba6;
+  --bs-btn-disabled-bg: #3d8edd;
+  --bs-btn-disabled-border-color: #3d8edd;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #3d8edd;
+  --bs-btn-border-color: #3d8edd;
+  --bs-btn-hover-bg: #3d8edd;
+  --bs-btn-hover-border-color: #3d8edd;
+  --bs-btn-focus-shadow-rgb: 61, 142, 221;
+  --bs-btn-active-bg: #3d8edd;
+  --bs-btn-active-border-color: #3d8edd;
+  --bs-btn-disabled-color: #3d8edd;
+  --bs-btn-disabled-border-color: #3d8edd;
 }
 
 body {
