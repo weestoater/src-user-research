@@ -175,7 +175,7 @@
         "help-current-claim",
         "help-appeal-failed-claim",
         "help-current-appeal",
-        "help-with-transition"
+        "claim-succeeded"
       ]
     },
     "life-in-scotland": {
@@ -442,7 +442,6 @@
       "title": "How can I prepare for interviews with HO?",
       "description": "Guidance on preparing for interviews with the Home Office."
     },
-
     "asylum-current-claim": {
       "id": "asylum-current-claim",
       "type": "journey",
@@ -558,7 +557,6 @@
       "description": "Find organisations and services that can help you.",
       "children": ["destitution-information"]
     },
-
     "claim-appeal": {
       "id": "claim-appeal",
       "type": "journey",
@@ -591,13 +589,18 @@
       "title": "What help can I get during this process?",
       "description": "Find out what help is available while your appeal is ongoing."
     },
-
     "claim-succeeded": {
       "id": "claim-succeeded",
       "type": "journey",
-      "title": "Has your claim succeeded? (Transition)",
+      "title": "Have you received refugee status?",
       "description": "Support for people transitioning after a successful asylum claim.",
-      "children": ["help-with-transition", "received-leave-no-funds"]
+      "children": [
+        "transition-entitled",
+        "transition-help-during-process",
+        "explanation-of-documents",
+        "what-do-i-do-next",
+        "received-leave-no-funds"
+      ]
     },
     "help-with-transition": {
       "id": "help-with-transition",
