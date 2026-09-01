@@ -381,7 +381,7 @@
     "age-dispute-unaccompanied-minor": {
       "id": "age-dispute-unaccompanied-minor",
       "type": "task",
-      "title": "Unaccompanied Minors Resources",
+      "title": "Unaccompanied Minors Resources (Age dispute)",
       "description": "Resources for unaccompanied minors, including age dispute support.",
       "children": ["help-preclaim"]
     },
@@ -390,7 +390,13 @@
       "type": "journey",
       "title": "Do you need to start an asylum claim (pre-claim)",
       "description": "Guidance for people who need to start an asylum claim.",
-      "children": ["help-preclaim"]
+      "children": [
+        "preclaim-entitled",
+        "how-to-claim-asylum",
+        "what-happens-if-claim-asylum",
+        "who-can-advise-me",
+        "prepare-for-ho-interview"
+      ]
     },
     "help-preclaim": {
       "id": "help-preclaim",
@@ -442,7 +448,12 @@
       "type": "journey",
       "title": "Do you have a current asylum claim in progress (decision pending)",
       "description": "Support for people with a current asylum claim awaiting a decision.",
-      "children": ["help-current-claim", "trafficking-claim"]
+      "children": [
+        "current-claim-entitled",
+        "claim-successful",
+        "claim-unsuccessful",
+        "trafficking-claim"
+      ]
     },
     "help-current-claim": {
       "id": "help-current-claim",
@@ -553,7 +564,7 @@
       "type": "journey",
       "title": "Is your claim under appeal?",
       "description": "Support for people whose asylum claim is currently under appeal.",
-      "children": ["help-current-appeal"]
+      "children": ["appeal-process", "appeal-help-during-process"]
     },
     "help-current-appeal": {
       "id": "help-current-appeal",
