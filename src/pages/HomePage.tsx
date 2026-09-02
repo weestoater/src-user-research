@@ -41,7 +41,7 @@ export const HomePage = ({
         )}
       </div>
 
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3">
         {shuffledChildren.map((childId) => {
           const child = sitemap.pages[childId];
           return (

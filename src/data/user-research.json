@@ -11,7 +11,6 @@
       "description": "Choose the option that best describes your situation.",
       "children": [
         "country-resources",
-        "refugee-transition",
         "unaccompanied-minors",
         "asylum-preclaim",
         "asylum-current-claim",
@@ -349,7 +348,6 @@
       "title": "My status is",
       "description": "Find information based on your current situation.",
       "children": [
-        "refugee-transition",
         "unaccompanied-minors",
         "asylum-preclaim",
         "asylum-current-claim",
@@ -357,13 +355,6 @@
         "claim-appeal",
         "claim-succeeded"
       ]
-    },
-    "refugee-transition": {
-      "id": "refugee-transition",
-      "type": "journey",
-      "title": "Have you completed the Refugee transition process? (Resettlement)",
-      "description": "Support for those completing the refugee transition and resettlement process.",
-      "children": ["access-case-worker-support"]
     },
     "access-case-worker-support": {
       "id": "access-case-worker-support",
@@ -510,8 +501,8 @@
     "claim-failed": {
       "id": "claim-failed",
       "type": "journey",
-      "title": "Did your claim fail? (NRPF)",
-      "description": "Support for people whose asylum claim has failed and have no recourse to public funds.",
+      "title": "Did your claim get a negative result? (NRPF)",
+      "description": "Support for people whose asylum claim had a negative result and have no recourse to public funds.",
       "children": [
         "appeal-entitled",
         "appeal-options-rejected",
@@ -522,8 +513,8 @@
     "help-appeal-failed-claim": {
       "id": "help-appeal-failed-claim",
       "type": "task",
-      "title": "Help appealing failed claim",
-      "description": "Information and support to help you appeal a failed claim.",
+      "title": "Help appealing negative result",
+      "description": "Information and support to help you appeal a negative result.",
       "children": [
         "appeal-entitled",
         "appeal-options-rejected",
@@ -599,7 +590,8 @@
         "transition-help-during-process",
         "explanation-of-documents",
         "what-do-i-do-next",
-        "received-leave-no-funds"
+        "received-leave-no-funds",
+        "access-case-worker-support"
       ]
     },
     "help-with-transition": {
